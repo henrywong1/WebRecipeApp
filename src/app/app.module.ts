@@ -6,10 +6,12 @@ import { HomeComponent } from './home/home.component';
 import { NavbarComponent } from './home/navbar/navbar.component';
 import { AboutComponent } from '../app/about/about.component';
 import { MainBodyComponent } from './home/main-body/main-body.component';
-import { SearchComponent } from './search/search.component';
+import { ResultsComponent } from './results/results.component';
 
 const appRoutes: Routes = [
   { path: 'about', component: AboutComponent },
+  { path: 'results', component: ResultsComponent},
+  { path: '', component: HomeComponent}
 ];
 
 @NgModule({
@@ -19,7 +21,7 @@ const appRoutes: Routes = [
     NavbarComponent,
     AboutComponent,
     MainBodyComponent,
-    SearchComponent,
+    ResultsComponent,
   ],
   imports: [
     BrowserModule,
